@@ -10,8 +10,7 @@ public class Bai1 {
                 "J2ME cho các ứng dụng di động.";
 
         // Đếm số lượng từng từ
-        Map<String, Integer> soLuongTu = soLuongTu(text);
-        System.out.println("Số lượng từng từ: " + soLuongTu);
+        soLuongTu(text);
 
         // Viết hoa chữ cái đầu trong mỗi từ
         String vietHoaChuCaiDau = vietHoaChuCaiDau(text);
@@ -22,15 +21,23 @@ public class Bai1 {
         System.out.println("Xóa nguyên âm: " + xoaNguyenAm);
     }
 
-    public static Map<String, Integer> soLuongTu(String text) {
-        Map<String, Integer> wordCount = new HashMap<>();
-        String[] words = text.toLowerCase().split("\\s+");
-        for (String word : words) {
-            if (!word.isEmpty()) {
-                wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+    public static void soLuongTu(String text) {
+        // Loại bỏ dấu câu và chuyển thành chữ thường
+        String[] words = text.toLowerCase().replaceAll("[,.:]", "").split("\\s+");
+        List<String> checkedWords = new ArrayList<>();
+
+        for (int i = 0; i < words.length; i++) {
+            if (!words[i].isEmpty() && !checkedWords.contains(words[i])) { // Bỏ qua từ trống
+                int count = 0;
+                for (int j = 0; j < words.length; j++) {
+                    if (words[i].equals(words[j])) {
+                        count++;
+                    }
+                }
+                checkedWords.add(words[i]); // Đánh dấu từ đã kiểm tra
+                System.out.println(words[i] + ": " + count);
             }
         }
-        return wordCount;
     }
 
     public static String vietHoaChuCaiDau(String text) {

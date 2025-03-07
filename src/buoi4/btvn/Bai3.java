@@ -86,22 +86,31 @@ public class Bai3 {
     }
 
     public static void timSoTrungLap(int[] arr) {
-        Map<Integer, Integer> freqMap = new HashMap<>();
-        for (int num : arr) {
-            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
-        }
-        int duplicateCount = 0;
         List<Integer> duplicates = new ArrayList<>();
-        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
-            if (entry.getValue() > 1) {
+        int duplicateCount = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == -1) continue; // Bỏ qua phần tử đã kiểm tra
+
+            int count = 1; // Đếm số lần xuất hiện của arr[i]
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                    arr[j] = -1; // Đánh dấu phần tử trùng lặp để không đếm lại
+                }
+            }
+
+            if (count > 1) {
                 duplicateCount++;
-                duplicates.add(entry.getKey());
+                duplicates.add(arr[i]);
             }
         }
+
         System.out.println("Số lượng phần tử trùng lặp: " + duplicateCount + " (" + duplicates + ")");
     }
 
     public static int[] insertElement(int[] arr, int value, int index) {
+        index = index - 1;
         if (index < 0 || index > arr.length) {
             System.out.println("Vị trí không hợp lệ!");
             return arr;
@@ -115,12 +124,13 @@ public class Bai3 {
     }
 
     public static int[] removeElement(int[] arr, int index) {
+        index = index - 1;
         if (index < 0 || index >= arr.length) {
             System.out.println("Vị trí không hợp lệ!");
             return arr;
         }
         int[] newArr = new int[arr.length - 1];
-        for (int i = 0, j = 0; i < arr.length; i++) {
+        for (int i = 1, j = 1; i <= arr.length; i++) {
             if (i == index) continue;
             newArr[j++] = arr[i];
         }
