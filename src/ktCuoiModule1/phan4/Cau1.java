@@ -59,7 +59,7 @@ public class Cau1 {
         return arr;
     }
 
-    // 2. Hàm tìm giá trị lớn nhất và nhỏ nhất (không dùng hàm có sẵn)
+    // 2. Hàm tìm giá trị lớn nhất và nhỏ nhất
     public static void timMaxMin(int[] arr, int elementCount) {
         if (elementCount == 0) {
             System.out.println("Mảng rỗng, không thể tìm giá trị lớn nhất và nhỏ nhất.");
@@ -165,7 +165,7 @@ public class Cau1 {
         return arr.length; // Kích thước thực tế sau xóa là độ dài mảng mới
     }
 
-    // 6. Hàm tìm phần tử lớn thứ 3 trong mảng (không dùng hàm có sẵn)
+    // 6. Hàm tìm phần tử lớn thứ 3 trong mảng
     public static void timPhanTuLonThu3(int[] arr, int elementCount) {
         if (elementCount < 3) {
             System.out.println("Mảng không đủ phần tử để tìm phần tử lớn thứ 3.");
