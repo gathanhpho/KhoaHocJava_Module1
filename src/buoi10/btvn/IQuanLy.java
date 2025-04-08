@@ -1,6 +1,8 @@
 package buoi10.btvn;
 
 public interface IQuanLy {
+    void QuanLyImpl(NhanVien NhanVien);
+
     void khoiTaoNhanVienMacDinh();
 
     void themNhanVien();
