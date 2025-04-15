@@ -12,9 +12,9 @@ create table company_info
 
 create table social
 (
-    id   integer PRIMARY KEY,
+    id              integer PRIMARY KEY,
     company_info_id int,
-    link varchar(255)
+    link            varchar(255)
 );
 
 create table branch
@@ -40,7 +40,6 @@ CREATE TABLE production
     category_id INT
 );
 
--- Bảng image
 CREATE TABLE image
 (
     id        INT PRIMARY KEY AUTO_INCREMENT,
@@ -48,7 +47,6 @@ CREATE TABLE image
     extention VARCHAR(20)
 );
 
--- Bảng trung gian production_image
 CREATE TABLE production_image
 (
     production_id INT,
@@ -56,7 +54,6 @@ CREATE TABLE production_image
     PRIMARY KEY (production_id, image_id)
 );
 
--- Bảng size
 CREATE TABLE size
 (
     id   INT PRIMARY KEY AUTO_INCREMENT,
@@ -65,7 +62,7 @@ CREATE TABLE size
     type VARCHAR(50)
 );
 
--- Bảng trung gian production_size
+
 CREATE TABLE production_size
 (
     production_id INT,
@@ -73,7 +70,7 @@ CREATE TABLE production_size
     PRIMARY KEY (production_id, size_id)
 );
 
--- Bảng color
+
 CREATE TABLE color
 (
     id  INT PRIMARY KEY AUTO_INCREMENT,
@@ -81,13 +78,16 @@ CREATE TABLE color
     ma  VARCHAR(50)
 );
 
-ALTER TABLE social
-ADD CONSTRAINT fk_social_company
-FOREIGN KEY (company_info_id) REFERENCES company_info(id);
+CREATE TABLE production_color
+(
+    production_id INT,
+    color_id      INT,
+    PRIMARY KEY (production_id, color_id)
+);
 
-ALTER TABLE category
-    ADD CONSTRAINT fk_category_parent
-        FOREIGN KEY (category_parent) REFERENCES category (id);
+ALTER TABLE social
+    ADD CONSTRAINT fk_social_company
+        FOREIGN KEY (company_info_id) REFERENCES company_info (id);
 
 ALTER TABLE production
     ADD CONSTRAINT fk_production_category
