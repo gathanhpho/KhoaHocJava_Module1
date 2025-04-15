@@ -12,6 +12,12 @@ public class QuanLyImpl implements IQuanLy{
         danhSachNhanVien = new ArrayList<>();
         khoiTaoNhanVienMacDinh();
     }
+
+    @Override
+    public void QuanLyImpl(NhanVien NhanVien) {
+
+    }
+
     @Override
     public void khoiTaoNhanVienMacDinh() {
         danhSachNhanVien.add(new NhanVienVanPhong("NV001", "Nguyễn Văn A", 30, 5000000, 20));
