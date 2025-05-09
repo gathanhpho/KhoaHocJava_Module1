@@ -104,3 +104,4 @@ ALTER TABLE production_size
         FOREIGN KEY (production_id) REFERENCES production (id),
     ADD CONSTRAINT fk_ps_size
         FOREIGN KEY (size_id) REFERENCES size (id);
+
