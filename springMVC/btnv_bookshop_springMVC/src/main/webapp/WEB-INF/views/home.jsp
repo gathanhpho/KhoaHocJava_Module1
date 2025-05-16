@@ -1,29 +1,32 @@
 <%--
   Created by IntelliJ IDEA.
-  User: admin
-  Date: 09/05/2025
-  Time: 5:17 CH
+  User: SKY
+  Date: 5/9/2025
+  Time: 7:01 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%--syntax import lib in jsp--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Trang chủ</title>
 
-    <link href="/static/img/favicon.icon" rel="shortcut icon" type="image/x-icon">
+    <link href="static/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap v5.0.1 -->
-    <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <script src="/static/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="static/js/bootstrap.bundle.js" type="text/javascript"></script>
 
     <!-- Bootstrap Icons v1.5.0 -->
-    <link href="/static/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link href="static/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link href="/static/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="static/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -126,7 +129,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -138,7 +141,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -150,7 +153,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -162,7 +165,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -174,7 +177,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -186,7 +189,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -198,7 +201,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -210,7 +213,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -222,7 +225,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -234,7 +237,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -246,7 +249,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -258,7 +261,7 @@
                     <div class="card-body">
                         <a href="#" class="stretched-link">
                             <div class="d-flex align-items-center">
-                                <img src="/static/img/50px.png">
+                                <img src="static/img/50px.png">
                                 <span class="category-title ms-3">Sách giáo khoa</span>
                             </div>
                         </a>
@@ -274,143 +277,37 @@
         <header class="section-heading py-4 d-flex justify-content-between">
             <h3 class="section-title">Sản phẩm mới nhất</h3>
             <a class="btn btn-secondary" href="#" role="button" style="height: fit-content;">Xem tất cả</a>
-        </header> <!-- section-heading.// -->
+        </header>
+
         <div class="row item-grid">
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
+            <c:forEach var="product" items="${models}">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-3 mb-4">
+                        <!-- Link hình ảnh tới trang chi tiết sản phẩm
+                         href="production-detail?id=${product.id}"
+                            + gắn param cho url
+                                localhost:8080/production-detail?id=product.id
+                               đánh dấu khi user click vào sản phẩm naof trình duyệt sẽ gửi 1 request localhost:8080/production-detail?id=product.id tới server
+                               -> từ request này lấy ra param để lấy ra chi tiết sản phẩm
+                         -->
+                        <a href="production-detail?id=${product.id}" class="img-wrap text-center">
+                            <img class="img-fluid" src="static/img/200px.png" alt="Sản phẩm">
+                        </a>
+                        <figcaption class="info-wrap mt-2">
+                            <!-- Link tiêu đề tới trang chi tiết sản phẩm -->
+                            <a href="production-detail?id=${product.id}" class="title">
+                                <c:out value="${product.title}" />
+                            </a>
+                            <div class="price mt-1 fw-bold">
+                                <c:out value="${product.price}" />₫
+                            </div>
+                        </figcaption>
+                    </div>
                 </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-            <div class="col-lg-3 col-md-6">
-                <div class="card p-3 mb-4">
-                    <a href="#" class="img-wrap text-center">
-                        <img class="img-fluid" src="/static/img/200px.png">
-                    </a>
-                    <figcaption class="info-wrap mt-2">
-                        <a href="#" class="title">Tên một sản phẩm</a>
-                        <div class="price mt-1 fw-bold">450.000₫</div>
-                    </figcaption>
-                </div>
-            </div> <!-- col.// -->
-        </div> <!-- row.// -->
-    </div> <!-- container.// -->
-</section> <!-- section-content.// -->
+            </c:forEach>
+        </div>
+    </div>
+</section>
 
 <footer class="section-footer">
     <section class="footer-top py-5 bg-light">

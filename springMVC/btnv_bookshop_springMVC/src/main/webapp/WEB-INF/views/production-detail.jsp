@@ -1,29 +1,33 @@
+
 <%--
   Created by IntelliJ IDEA.
-  User: admin
-  Date: 09/05/2025
-  Time: 5:28 CH
+  User: SKY
+  Date: 5/9/2025
+  Time: 7:18 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Chi tiết</title>
 
-    <link href="/static/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="static/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap v5.0.1 -->
-    <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <script src="/static/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="static/js/bootstrap.bundle.js" type="text/javascript"></script>
 
     <!-- Bootstrap Icons v1.5.0 -->
-    <link href="/static/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link href="static/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link href="/static/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="static/css/styles.css" type="text/css" rel="stylesheet">
 
     <style>
         body {
@@ -120,7 +124,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 py-3">
-                    <a class="text-body" href="./home.html">
+                    <a class="text-body" href="/home">
                         <h3>Shop Bán Sách</h3>
                     </a>
                 </div> <!-- col.// -->
@@ -215,22 +219,22 @@
             <div class="product-detail">
                 <!-- Ảnh sách -->
                 <div class="product-image">
-                    <img src="/static/img/570px-3.png" alt="Ảnh bìa sách">
+                    <img src="static/img/570px-3.png" alt="Ảnh bìa sách">
                 </div>
 
                 <!-- Thông tin sách -->
                 <div class="product-info">
-                    <p><strong>Tên sách:</strong> Tên sách ví dụ</p>
-                    <p><strong>Tác giả:</strong> Tên tác giả</p>
-                    <p><strong>Mô tả:</strong> Đây là mô tả ngắn gọn về nội dung của cuốn sách. Nội dung có thể dài hơn tùy theo dữ liệu thực tế.</p>
-                    <p><strong>Thể loại:</strong> Khoa học viễn tưởng</p>
-                    <p><strong>Nhà xuất bản:</strong> NXB Trẻ</p>
-                    <p><strong>Năm xuất bản:</strong> 2022</p>
-                    <p><strong>Số trang:</strong> 350</p>
-                    <p class="price"><strong>Giá bán:</strong> 120.000₫</p>
-                    <p class="discount"><strong>Giảm giá:</strong> 10%</p>
-                    <p><strong>Số lượng còn lại:</strong> 25 cuốn</p>
-                    <p><strong>Danh mục:</strong> Sách Văn học</p>
+                    <p><strong>Tên sách:</strong> ${prodDetail.title}</p>
+                    <p><strong>Tác giả:</strong> ${prodDetail.author}</p>
+                    <p><strong>Mô tả:</strong>${prodDetail.description}</p>
+                    <p><strong>Thể loại:</strong>${prodDetail.category}</p>
+                    <p><strong>Nhà xuất bản:</strong>${prodDetail.publisher}</p>
+                    <p><strong>Năm xuất bản:</strong>${prodDetail.publicationYear}</p>
+                    <p><strong>Số trang:</strong>${prodDetail.pageCount}</p>
+                    <p class="price"><strong>Giá bán:</strong> ${prodDetail.price} ₫</p>
+                    <p class="discount"><strong>Giảm giá:</strong> ${prodDetail.discountPercent}</p>
+                    <p><strong>Số lượng còn lại:</strong> ${prodDetail.stockQuantity}</p>
+                    <%--                    <p><strong>Danh mục:</strong> Sách Văn học</p>--%>
                     <a href="#" class="buy-button">Mua ngay</a>
                 </div>
             </div>
@@ -288,4 +292,3 @@
 </body>
 
 </html>
-
