@@ -1,11 +1,11 @@
 package com.bookshop.dao;
 
-import com.bookshop.model.ProductionModel;
+import com.bookshop.entity.ProductionEntity;
 
 import java.util.List;
 
 public interface ProductionDao {
-    public List<ProductionModel> getProduction();
+    public List<ProductionEntity> getProduction();
 
-    ProductionModel findById(Integer id);
+    ProductionEntity findById(Integer id);
 }

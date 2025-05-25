@@ -1,5 +1,6 @@
 package com.bookshop.controller.resources;
 
+import com.bookshop.entity.ProductionEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -63,7 +64,7 @@ public class HomeController {
     private ProductionService productionService;
     @GetMapping("/home")
     public String home(Model model) {
-        List<ProductionModel> productionModels = productionService.getProductions();
+        List<ProductionEntity> productionModels = productionService.getProductions();
         model.addAttribute("models", productionModels);
         return "home";
     }
