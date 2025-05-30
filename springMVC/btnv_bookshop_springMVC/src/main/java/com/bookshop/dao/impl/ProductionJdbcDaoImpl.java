@@ -78,4 +78,14 @@ public class ProductionJdbcDaoImpl implements ProductionDao {
         });
         return productionModel;
     }
+
+    @Override
+    public List<ProductionEntity> findProductionPaging(Long limit, Long offset, String title, String author, Integer publicYear, String categoryName) {
+        return null;
+    }
+
+    @Override
+    public Long countProduction(String title, String author, Integer publicYear, String categoryName) {
+        return 0L;
+    }
 }

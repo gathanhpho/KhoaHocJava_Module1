@@ -1,5 +1,9 @@
 package com.bookshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Locale;
 
@@ -23,6 +27,8 @@ public class ProductionEntity {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id")
+//    @JsonBackReference
+    @JsonManagedReference
     private CategoryEntity category;
 
     public CategoryEntity getCategory() {

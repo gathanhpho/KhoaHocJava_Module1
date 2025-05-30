@@ -1,8 +1,8 @@
-package com.bookshop.model;
+package com.bookshop.model.response;
 
 import com.bookshop.entity.CategoryEntity;
 
-public class ProductionModel {
+public class ProductionResponse {
 
     private Integer id;
     private String title;
@@ -15,23 +15,7 @@ public class ProductionModel {
     private Double price;
     private Double discountPercent;
     private Integer stockQuantity;
-    private String category;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    private CategoryResponse category;
 
     public String getAuthor() {
         return author;
@@ -39,6 +23,14 @@ public class ProductionModel {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public CategoryResponse getCategory() {
+        return category;
+    }
+
+    public void setCategory(CategoryResponse category) {
+        this.category = category;
     }
 
     public String getDescription() {
@@ -49,6 +41,14 @@ public class ProductionModel {
         this.description = description;
     }
 
+    public Double getDiscountPercent() {
+        return discountPercent;
+    }
+
+    public void setDiscountPercent(Double discountPercent) {
+        this.discountPercent = discountPercent;
+    }
+
     public String getGenre() {
         return genre;
     }
@@ -57,20 +57,12 @@ public class ProductionModel {
         this.genre = genre;
     }
 
-    public String getPublisher() {
-        return publisher;
+    public Integer getId() {
+        return id;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
-    }
-
-    public Integer getPublicationYear() {
-        return publicationYear;
-    }
-
-    public void setPublicationYear(Integer publicationYear) {
-        this.publicationYear = publicationYear;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getPageCount() {
@@ -89,12 +81,20 @@ public class ProductionModel {
         this.price = price;
     }
 
-    public Double getDiscountPercent() {
-        return discountPercent;
+    public Integer getPublicationYear() {
+        return publicationYear;
     }
 
-    public void setDiscountPercent(Double discountPercent) {
-        this.discountPercent = discountPercent;
+    public void setPublicationYear(Integer publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
     public Integer getStockQuantity() {
@@ -105,11 +105,11 @@ public class ProductionModel {
         this.stockQuantity = stockQuantity;
     }
 
-    public String getCategory() {
-        return category;
+    public String getTitle() {
+        return title;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

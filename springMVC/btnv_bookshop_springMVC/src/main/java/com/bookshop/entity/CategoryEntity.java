@@ -1,6 +1,9 @@
 package com.bookshop.entity;
 
 import com.bookshop.model.ProductionModel;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -17,14 +20,17 @@ public class CategoryEntity {
     private String categoryName;
     private String description;
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+//    @JsonManagedReference
+    @JsonBackReference
+//    @JsonIgnore
     private Set<ProductionEntity> productions;
 
     public String getCategoryName() {
         return categoryName;
     }
 
-    public void setCategoryName(String categoryName) {
+    public void setCategory(String categoryName) {
         this.categoryName = categoryName;
     }
 
